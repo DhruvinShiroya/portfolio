@@ -1,9 +1,9 @@
 <div class="text-center">
   <h3>Projects</h3>
   <hr />
-  <div *ngFor="let project of projectCard" class="d-flex flex-row projectCard justify-content-center p-3 m-3">
+  <div layout="row" layout-align="space-around center" *ngFor="let project of projectCard" class="d-flex flex-row projectCard justify-content-center p-3 m-3">
     <div>
-      <div class="card view overlay zoom" style="width: 10rem">
+      <div class="card view overlay zoom" style="width: 14rem">
         <a href="{{ project.url }}">
           <img
             class="img-fluid"
