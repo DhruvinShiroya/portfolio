@@ -1,0 +1,8 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/6094c92a-4df7-431c-8d0e-de68cc930e06/resourceGroups/portfolio/providers/Microsoft.Web/sites/dhruvin-portfolio",
+  "appService.deploySubpath": "dist"
+}

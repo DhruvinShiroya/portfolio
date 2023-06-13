@@ -3,4 +3,5 @@ export interface ProjectCard {
   name: string;
   url: string;
   img: string;
+  description: string;
 }

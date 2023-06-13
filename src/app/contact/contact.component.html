@@ -1,19 +1,21 @@
 <div id="social" class="text-center">
-<h3>Socials</h3>
-<hr />
-<ul class="contactList d-flex flex-row justify-content-center">
-  <li *ngFor="let contact of contactList" class="p-4 ">
-    <a href="{{ contact.link }}">
-      <img src="{{ contact.img }}" height="50px" alt="{{ contact.title }}" />
+  <h3>Socials</h3>
+  <hr />
+  <ul class="contactList d-flex flex-row justify-content-center">
+    <li *ngFor="let contact of contactList" class="p-4">
+      <a href="{{ contact.link }}">
+        <img src="{{ contact.img }}" height="50px" alt="{{ contact.title }}" />
+      </a>
+    </li>
+  </ul>
+  <button type="button" class="to-top bg-transparent border-0">
+    <a rel="noopener" target="_self" href="#home_nav">
+    <img
+      class="top-button"
+      src="../../assets/iconmonstr-caret-up-circle-filled.png"
+      height="50px"
+      alt="TO top of the site"
+    />
     </a>
-  </li>
-</ul>
-<button type="button" class="to-top bg-transparent border-0 ">
-  <img class="top-button"
-    src="../../assets/iconmonstr-caret-up-circle-filled.png"
-    height="50px"
-    alt="TO top of the site"
-  />
-</button>
-
+  </button>
 </div>

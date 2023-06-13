@@ -1,10 +1,10 @@
-<div id="web-projects" class="text-center">
-  <h3>Projects</h3>
+<div  class="text-center">
+  <h3 id="web_projects">Projects</h3>
   <hr />
   <div layout="row" layout-align="space-around center" *ngFor="let project of projectCard" class="d-flex flex-row projectCard justify-content-center p-3 m-3">
-    <div>
-      <div class="card view overlay zoom" style="width: 14rem">
-        <a href="{{ project.url }}">
+    <div class="d-flex flex-row text-center" (mouseover)="showDescription(true,project.id)" (mouseout)="showDescription(false,project.id)" >
+      <div class="card view overlay zoom" style="width: 18rem">
+        <a  href="{{ project.url }}" >
           <img
             class="img-fluid"
             height="300px"
@@ -15,6 +15,12 @@
             <p class="card-title text-dark">{{ project.name }}</p>
           </div>
         </a>
+      </div>
+      <div class="container" app-hover-animation>
+        <p *ngIf="(showDetail && project.id === selectedId)">
+          this works
+          {{project.description}} 
+        </p>
       </div>
     </div>
   </div>
